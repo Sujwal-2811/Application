@@ -1,4 +1,5 @@
 import { Checkbox } from '../components/ui/checkbox'
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
@@ -45,6 +46,14 @@ const Login = () => {
 
         <div className='justify-center items-center  mt-4 flex'>
           <p>OR Login with</p>
+        </div>
+
+        <div className="justify-center items-center mt-4 flex">
+          <p className= "text-sm text-gray-700">
+            Don't have an account?{" "}
+            <Link to="/register" className="text-blue-600 hover:underline"> Register here</Link>
+          </p>
+
         </div>
 
         <div className="justify-center items-center mt-4 flex h-10 gap-4">
